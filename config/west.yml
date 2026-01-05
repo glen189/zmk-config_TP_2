@@ -8,6 +8,8 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: petejohanson # <-- enable the drivers
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -31,6 +33,9 @@ manifest:
       revision: main
     - name: zmk-cirque-adapter
       remote: mctechnology17
+      revision: main
+    - name: cirque-input-module # <-- enable the drivers
+      remote: petejohanson
       revision: main
   self:
     path: config
